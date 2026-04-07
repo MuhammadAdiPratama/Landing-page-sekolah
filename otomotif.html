@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pengembangan Perangkat Lunak dan Gim</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR FIX */
+.navbar-custom {
+  background-color: #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #0d6efd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.nav-item.show .nav-link.dropdown-toggle {
+  font-weight: 700;
+}
+.nav-link.dropdown-toggle.active {
+  font-weight: 700;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* HERO FIX (lebih profesional) */
+.hero-section {
+    background: linear-gradient(rgba(13,110,253,0.75), rgba(13,110,253,0.85)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200');
+
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: white;
+}
+
+.hero-section h1 {
+    letter-spacing: 1px;
+}
+
+/* CARD */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.bg-soft-blue { background-color: #e7f1ff; color: #0d6efd; }
+.bg-soft-green { background-color: #e8f5e9; color: #198754; }
+
+/* FOTO CONSISTENT */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+.progress-bar {
+  animation: progress-bar-stripes 0.8s linear infinite;
+}
+/* FOOTER */
+footer {
+    background-color: #212529;
+    color: #adb5bd;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+</style>
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+<div class="container-fluid">
+
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="logo.png">
+<span class="ms-2 fw-bold h1">SMK Nois</span>
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link active fw-bold" href="Landing-page.html#home">Beranda</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active fw-bold" href="Landing-page.html#visimisi">Visi Misi</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle active fw-bold" href="#" data-bs-toggle="dropdown">
+Jurusan
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="rpl.html">PPLG</a></li>
+<li><a class="dropdown-item" href="tkj.html">TJKT</a></li>
+<li><a class="dropdown-item" href="kuliner.html">Kuliner</a></li>
+<li><a class="dropdown-item" href="busana.html">Busana</a></li>
+<li><a class="dropdown-item" href="otomotif.html">Otomotif</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="Landing-page.html#jurusan">Lihat Semua</a></li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active fw-bold" href="Landing-page.html#tabel">Data Siswa</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<!-- HERO -->
+<header class="hero-section text-center">
+<div class="container mt-4">
+<h1 class="display-4 fw-bold">TEKNIK OTOMOTIF</h1>
+<p class="lead">
+Program keahlian yang membekali peserta didik dengan keterampilan perawatan, perbaikan, dan teknologi kendaraan modern sesuai standar industri otomotif.
+</p>
+</div>
+</header>
+
+<!-- CONTENT -->
+<main class="container my-5">
+<div class="row g-4">
+
+<!-- KIRI -->
+<div class="col-lg-8">
+<div class="card p-4 h-100">
+
+<h2 class="fw-bold mb-4">Mencetak Teknisi Profesional dan Siap Industri</h2>
+<p class="text-secondary mb-5">
+Program Teknik Otomotif dirancang untuk menghasilkan lulusan yang kompeten dalam bidang perawatan dan perbaikan kendaraan bermotor. 
+Peserta didik akan mempelajari sistem mesin, kelistrikan, hingga teknologi kendaraan modern berbasis injeksi dan digital.
+</p>
+
+<div class="row mb-5">
+
+<div class="col-md-6 mb-3">
+<div class="d-flex align-items-center">
+<div class="icon-box bg-soft-blue me-3">
+<i class="bi bi-gear-fill fs-4"></i>
+</div>
+<div>
+<h6 class="fw-bold mb-0">Engine System</h6>
+<small class="text-muted">Perawatan dan perbaikan mesin kendaraan.</small>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<div class="d-flex align-items-center">
+<div class="icon-box bg-soft-green me-3">
+<i class="bi bi-lightning-charge-fill fs-4"></i>
+</div>
+<div>
+<h6 class="fw-bold mb-0">Electrical System</h6>
+<small class="text-muted">Sistem kelistrikan dan teknologi modern kendaraan.</small>
+</div>
+</div>
+</div>
+
+</div>
+
+<h5 class="fw-bold mb-3">Fasilitas Unggulan</h5>
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between px-0">
+Workshop Otomotif <span class="badge bg-primary">Lengkap</span>
+</li>
+<li class="list-group-item d-flex justify-content-between px-0">
+Peralatan Bengkel Modern <span class="badge bg-info text-dark">Standar Industri</span>
+</li>
+<li class="list-group-item d-flex justify-content-between px-0">
+Praktik Kendaraan Nyata <span class="badge bg-warning text-dark">Aktif</span>
+</li>
+</ul>
+
+</div>
+</div>
+
+<!-- KANAN -->
+<div class="col-lg-4">
+
+<div class="card mb-4">
+<div class="bg-dark text-white p-3 text-center fw-bold">Status Pendaftaran</div>
+
+<div class="p-4">
+<div class="d-flex justify-content-between mb-2">
+<small class="fw-bold">Kuota Terisi</small>
+<small>100%</small>
+</div>
+
+<div class="progress mb-4" style="height:10px;">
+<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+</div>
+
+<button class="btn btn-primary w-100 fw-bold mb-2">DAFTAR SEKARANG</button>
+
+<a href="Landing-page.html">
+<button class="btn btn-light w-100 text-muted btn-sm">
+<i class="bi bi-arrow-left"></i> Kembali
+</button>
+</a>
+</div>
+</div>
+
+<!-- TESTIMONI -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400" class="card-img-top">
+
+<div class="p-4">
+<p class="fst-italic text-secondary small">
+"Belajar di jurusan Otomotif memberikan saya pengalaman langsung di bengkel dan pemahaman mendalam tentang mesin kendaraan. 
+Sekarang saya siap bekerja maupun membuka usaha bengkel sendiri."
+</p>
+<h6 class="fw-bold mb-0">- Fajar Hidayat, Alumni 2024</h6>
+</div>
+</div>
+
+</div>
+</div>
+</main>
+
+<footer class="footer-custom text-center">
+  <div class="container">
+    <p class="mb-1 small fw-semibold">© 2026 SMK Nois. Seluruh Hak Cipta Dilindungi.</p>
+    <div class="footer-social mt-2">
+      <i class="bi bi-facebook mx-1"></i>
+      <i class="bi bi-instagram mx-1"></i>
+      <i class="bi bi-youtube mx-1"></i>
+    </div>
+  </div>
+</footer>
+<hr>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
